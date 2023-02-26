@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" onsubmit="getdata(event)" class="form">
+            <input id="input" type="text" placeholder="Enter the City Name">
+            <button class="search">Search</button>
+        </form>
+
+        <section class="citydata">
+            <div class="weatherbox">
+                <h1 class="cityname">City </h1><span> , </span>
+                <h1 class="statename">State </h1><span> , </span>
+                <h1 class="countryname">Country</h1>
+            </div>
+            <div class="weatherdata">
+                <div class="con">
+                    <div>
+                        <img width="60px" id="logoImage"
+                            src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-25.png  "
+                            alt="icon" />
+                    </div>
+                    <div>
+                        <span class="temprature">00</span>
+                        <h1 class="condition">Condition</h1>
+                    </div>
+
+
+                </div>
+                <div class="humi">
+                    <div>
+                        <img width="60px" id="logoImage" src="https://weatherliveupdate.netlify.app/thermometer.png "
+                            alt="icon" />
+
+                    </div>
+                    <div>
+                        <span class="humidity-number">00</span>
+                        <h1 class="humidity">Humidity</h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
