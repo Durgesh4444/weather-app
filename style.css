@@ -1,108 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /* https://www.ksnt.com/wp-content/uploads/sites/86/2016/03/sunshine_36366417_ver1.0-8.jpg?w=2560&h=1440&crop=1 */
- body{
-    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg);
-    padding: 3% 10%;
- }
+body {
+  background-image: url( http://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg);
 
- /* https://wallup.net/wp-content/uploads/2019/09/838309-storm-weather-rain-sky-clouds-nature.jpg */
+  padding: 3% 10%;
+}
+/* http://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg */
 
- /* cloud -https://webstockreview.net/images/fog-clipart-wind-13.png */
+/* https://wallup.net/wp-content/uploads/2019/09/838309-storm-weather-rain-sky-clouds-nature.jpg */
 
- #input{
-    width: 40vw;
-    height: 50px;
-    background-color: transparent;
-    color: white;
-    font-size: 25px;
-    border: 3px solid rgb(212, 206, 206);
-    border-radius: 25px;
-    padding-left: 30px;
-    padding-bottom: 3px;
-    margin-bottom: 30px;
-    text-shadow: 1px 3px 3px black;
- }
- /* ::placeholder */
- ::placeholder{
-    color:white;
-    font-size: 20px;
-    text-shadow: 1px 3px 3px black;
+/* cloud -https://webstockreview.net/images/fog-clipart-wind-13.png */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
- }
+#input {
+  width: 35vw;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-bottom: 3px;
+  margin-bottom: 30px;
+  text-shadow: 1px 3px 10px black;
+}
+/* ::placeholder */
+::placeholder {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 3px 3px black;
+}
 
- /* search button  */
+/* search button  */
 
- .search{
-    position: relative;
-    left: -110px;
-    background-color: transparent;
-    color:white;
-    border: none;
-    font-size: 20px;
-    text-shadow: 1px 3px 3px black;
-    font-weight:600;
-    cursor: pointer;
-    
-    
- }
- .search:hover{
-    color: gray;
+.search {
+  position: relative;
+  left: -110px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  text-shadow: 1px 3px 3px black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.search:hover {
+  color: black;
+  text-shadow: none;
+}
 
-    /* border: 3px solid rgb(212, 206, 206);
-    height: 50px;
-    background-color: white;
-    color: #406DA9;
-    position: relative;
-    left: -158px;
-    width: 10vw;
-    border-radius: 25px;
-    text-shadow: none; */
-    
+.citydata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid rgb(212, 206, 206); */
+  width: 40vw;
+  text-shadow: 1px 3px 3px black;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  margin-left: -70px;
+}
+.coma {
+  font-size: 35px;
+  margin: 0 5px;
+}
 
- }
+.weatherbox {
+  font-size: 18px;
+  display: flex;
+  /* margin-bottom: px; */
+}
+.countryname {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.main ,.humidity-number,
+.temprature {
+  font-size: 50px;
+}
+.date {
+  margin-bottom: 30px;
+}
+.weatherdata {
+  display: flex;
+  gap: 50px;
+}
+.con {
+  display: flex;
+  gap: 20px;
+}
+
+.humi {
+  display: flex;
+  gap: 10px;
+}
+.humi div:nth-child(1) {
+  margin-top: 20px;
+}
 
 
- .citydata{
-    border: 3px solid rgb(212, 206, 206);
+/* sup section */
+.sub{
+   display: flex;
+   gap: 30px;
+   color: #fff;
+   margin-top: 50px;
+}
+.sub-box{
 
-    width: 40vw;
-    text-shadow: 1px 3px 3px black;
-    color:white;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 23px;
+background-color: rgb(201, 197, 197,0.3);
+border-radius: 20px;
+width: 150px;
+height: 150px;
+text-shadow: 1px 3px 3px black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
 
- }
- span{
-    font-size: 35px;
-    margin: 0 5px;
- }
 
- .weatherbox{
-    display: flex;
-    margin-bottom: 100px;
- }
- .weatherdata{
-    display: flex;
-    gap: 50px;
- }
- .con{
-    display: flex;
-    gap: 10px;
- }
- .con div:nth-child(1){
-    margin-top: 20px;
- }
- .humi{
-    display: flex;
-    gap: 10px;
- }
- .humi div:nth-child(1){
-    margin-top: 20px;
- }
- 
+.sub-box h1{
+   font-size: 28px;
+}
+
+.sub-box p{
+   font-size: 17px;
+}
+
+.sub-box:hover{
+border: 2px solid #fff;
+background-color:  rgb(201, 197, 197,0.5);
+
+
+}
