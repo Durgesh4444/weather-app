@@ -9,7 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url( https://www.ksnt.com/wp-content/uploads/sites/86/2016/03/sunshine_36366417_ver1.0-8.jpg?w=2560&h=1440&crop=1);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: left;
 
   padding: 3% 10%;
@@ -170,8 +170,13 @@ background-color:  rgb(201, 197, 197,0.5);
 /* responsive */
 
 @media only screen and (max-width: 850px) and (min-width:601px){
+  body {
+    height: 1000px;
+  }
   .container {
     max-width: 100%;
+    
+
     padding: 0 15px;
   }
   .citydata{
@@ -203,6 +208,10 @@ background-color:  rgb(201, 197, 197,0.5);
 }
 
 @media only screen and (max-width:600px){
+
+  body{
+    height: 100px;
+  }
   .container {
     max-width: 100%;
   
