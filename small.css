@@ -1,0 +1,54 @@
+@media only screen and (max-width:600px){
+  body{
+    height: 900px;
+  }
+  .container {
+    width: 100%;
+  
+  } 
+  .cityname,.statename{
+    font-size: 22px;
+   }
+   .coma{
+    font-size: 25px;
+   }
+   .countryname{
+    font-size: 20px;
+   }
+  .citydata{
+    width: 100vw;
+    padding: 0px;
+  }
+  #input {
+    width: 65vw;
+    height: 45px;
+    font-size: 25px;
+   }
+   .sub{
+    margin-top: 20px;
+   }
+   .sub-box{
+    height: 120px;
+    width: 120px;
+   }
+   .sub-box h1{
+    font-size: 23px;
+   }
+   .sub-box:nth-child(1){
+    margin-left: 600px;
+   }
+   .sub-box:nth-child(4),.sub-box:nth-child(5),.sub-box:nth-child(6){
+    position: relative;
+    top: 150px;
+    left: -450px;
+    
+   }
+   .sub-box:nth-child(7){
+    position: relative;
+    top: 300px;
+    left: -750px;}
+    
+  
+     }
+    
+     
